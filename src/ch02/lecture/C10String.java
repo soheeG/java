@@ -4,7 +4,7 @@ public class C10String {
 	public static void main(String[] args) {
 		//string (참조 타입)
 		// 문자열을 저장
-		
+		// 로그인확인
 		String s1;
 		s1 = "hello world";
 		
