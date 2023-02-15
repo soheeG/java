@@ -28,7 +28,7 @@ public class C07char {
 		
 //		char c6 = 'ab'; // X 하나의 문자만 작성 가능
 //		char c7 = ''; // X 비어있는 문자도 안됨
-		
+//		' '공백 하나를 포함해서 입력은 가능(유니코드: 32)
 	    char c8 = 'b';
 	    int d = c8 - c4;
 	    System.out.println(d);
