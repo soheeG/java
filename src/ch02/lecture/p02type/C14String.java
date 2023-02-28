@@ -35,7 +35,7 @@ public class C14String {
 	    //기본타입 -> 문자열(String)
 	    //valueOf 메소드 사용
 	    int i6 = 700;
-	    String str6 = String.valueOf(i6));
+	    String str6 = String.valueOf(i6);
 	    System.out.println(i6);
 	    
 	    long l7 = 9999999999L;

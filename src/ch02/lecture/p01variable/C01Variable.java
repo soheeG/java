@@ -1,6 +1,8 @@
 package ch02.lecture.p01variable;
 
 public class C01Variable {
+	public static void main(String[] args) {
+		
 	// 변수 : 값을 담을 수 있는 이름이 있는 공간
 	
 	// 변수 선언 : 타입 변수명; << 나란히 작성
@@ -48,4 +50,5 @@ public class C01Variable {
 	int ks; // 어떤 값을 저장하는 변수인지 명확히 확인 어려움
 	int englishScore;
 	
+	}
 }

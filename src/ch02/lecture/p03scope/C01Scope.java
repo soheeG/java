@@ -14,6 +14,6 @@ public class C01Scope {
 			
 			System.out.println(v2); // 사용 가능
 		}
-		System.out.println(v2); // 사용 불가
+//		System.out.println(v2); // 사용 불가
 	}
 }
