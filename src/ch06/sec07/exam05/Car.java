@@ -8,7 +8,18 @@ public class Car {
 	int maxSpeed;
 	
 	Car(String model) {
-		//20
-		
+		//20라인 생성자 호출
+		this(model, "은색", 250);
+	}
+	
+	Car(String model, String color) {
+		//20라인 생성자 호출
+		this(model, color, 250);
+	}
+	
+	Car(String modle, String color, int maxSpeed) {
+		this.model = model;
+		this.color = color;
+		this.maxSpeed = maxSpeed;
 	}
 }
