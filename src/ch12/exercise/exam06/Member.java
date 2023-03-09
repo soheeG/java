@@ -1,4 +1,4 @@
-package ch12.lecture.exercise.exam06;
+package ch12.exercise.exam06;
 
 public class Member {
 	private String id;
