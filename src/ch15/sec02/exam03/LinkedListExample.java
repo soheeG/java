@@ -18,6 +18,7 @@ public class LinkedListExample {
 		startTime = System.nanoTime();
 		for (int i = 0; i < 10000; i++ ) {
 			list1.add(0, String.valueOf(i));
+//			list1.add(String.valueOf(i)); //뒤에 객체 추가하는 작업
 		}
 		endTime = System.nanoTime();
 		System.out.printf("%-17s %8d ns \n", "ArrayList 걸리는 시간: ",
@@ -27,6 +28,7 @@ public class LinkedListExample {
 		startTime = System.nanoTime();
 		for (int i = 0; i < 10000; i++) {
 			list2.add(0, String.valueOf(i));
+//			list2.add(String.valueOf(i)); //뒤에 객체 추가하는 작업
 		}
 		endTime = System.nanoTime();
 		System.out.printf("%-17s %8d ns \n", "LinkedList 걸리는 시간: ",
