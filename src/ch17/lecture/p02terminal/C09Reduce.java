@@ -12,6 +12,17 @@ public class C09Reduce {
 				.get();
 		
 		System.out.println(sum);
+
+		Integer max = list.stream()
+				.reduce(Math::max)
+				.get();
 		
+		System.out.println(max);
+		
+		Integer min = list.stream()
+				.reduce(Math::min)
+				.get();
+		
+		System.out.println(min);
 	}
 }
