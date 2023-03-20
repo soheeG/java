@@ -2,7 +2,7 @@ package ch17.sec07.exam01;
 
 import java.util.*;
 
-public class SortedExample {
+public class SortingExample {
 	public static void main(String[] args) {
 		//List 컬렉션 생성
 		List<Student> studentList = new ArrayList<>();
