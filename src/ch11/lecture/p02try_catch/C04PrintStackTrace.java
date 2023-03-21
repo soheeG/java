@@ -18,6 +18,5 @@ public class C04PrintStackTrace {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		
 	}
 }
