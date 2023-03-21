@@ -15,8 +15,8 @@ public class Account {
 	}
 	
 	public void withdraw(int money) throws InsufficientException {
-		if(blance < money) {
-			throw new InsufficientException("잔고 부족: " +(money-balance)+" 모자람");'
+		if(balance < money) {
+			throw new InsufficientException("잔고 부족: " +(money-balance)+" 모자람");
 		}
 		balance -= money;
 	}
