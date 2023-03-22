@@ -1,5 +1,18 @@
 package ch18.lecture.p02outputstream;
 
-public class C03Close {
+import java.io.*;
 
+public class C03Close {
+	public static void main(String[] args) {
+		// try-with-resources
+		
+		//자동으로 닫아줌 (close 안 사용해도 됨)
+		try (OutputStream os = new FileOutputStream("");) {
+			os.write(1);
+			os.flush();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
