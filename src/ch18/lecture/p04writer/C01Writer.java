@@ -7,7 +7,7 @@ public class C01Writer {
 		// Writer : 문자 단위 출력 스트림
 		// 주요 메소드 : write
 		
-		String fileName = "output/wro";
+		String fileName = "output/writer1.txt";
 		try (Writer wr = new FileWriter(fileName);) {
 		
 		
