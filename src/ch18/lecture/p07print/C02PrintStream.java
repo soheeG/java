@@ -20,6 +20,5 @@ public class C02PrintStream {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 	}
 }
