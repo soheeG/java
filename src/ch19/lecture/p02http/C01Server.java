@@ -9,7 +9,7 @@ public class C01Server {
 		
 		try (
 				ServerSocket serverSocket = new ServerSocket(port);) {
-				System.out.println("요청 기다리는 중...");
+			System.out.println("요청 기다리는 중...");
 		
 		try (
 			Socket socket = serverSocket.accept();

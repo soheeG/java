@@ -7,22 +7,25 @@ public class C03Server {
 	public static void main(String[] args) {
 		int port = 80;
 		
-		try (
+		try ( 
 			ServerSocket serverSocket = new ServerSocket(port)
 			;) {
 		System.out.println("요청 기다리는 중...");
 		
 		while (true) {
+			Socket socket = serverSocket.accept();
+			
+			Thread t = new Thread(() -> {
 		
-		try (
-		Socket socket = serverSocket.accept();
+		try ( socket;
 		
-		OutputStream os = socket.getOutputStream();
-		PrintStream ps = new PrintStream(os);) {
+			OutputStream os = socket.getOutputStream();
+			PrintStream ps = new PrintStream(os);) {
 		
 		
 		String body = """
 				<h1>This is NAVER!!</h1>
+				<h3>다른 사이트로 이동</h3>
 				<ul>
 					<li><a href="https://www.daum.net">daum</a></li>
 					<li><a href="https://WWW/google.com">google</a></li>
@@ -30,6 +33,7 @@ public class C03Server {
 				""";
 		
 		int length = body.getBytes().length;
+		
 			// 첫 줄
 			ps.println("HTTP/1.1 200 OK");
 			
@@ -44,9 +48,14 @@ public class C03Server {
 			ps.println(body);
 			
 			ps.flush();
-		  }
+		
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		
+		});
+			t.start();
+		}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
