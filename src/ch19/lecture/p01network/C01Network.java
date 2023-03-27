@@ -9,7 +9,7 @@ public class C01Network {
 		int port = 50500;
 		
 		try(ServerSocket serverSocket = new ServerSocket(port);) {
-			
+		    System.out.println("연결 기다리는 중...");
 			try (
 			Socket socket = serverSocket.accept();
 			OutputStream os = socket.getOutputStream();) {
